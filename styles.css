@@ -1,0 +1,82 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: radial-gradient(circle at center, rgba(170, 24, 24, 1) 0%, rgba(138, 21, 21, 1) 30%, black 100%);
+}
+
+.petition{
+    width: auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 25px rgb(238, 130, 130);
+    background-color: rgb(224, 83, 107);
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: top;
+    z-index: 1;
+    
+}
+img{
+  width: auto;
+  height: 30vh;
+
+}
+
+.botones{
+    margin-top: 1rem; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem; 
+}
+
+button{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+    
+}
+
+#boton_si{
+        background-color: rgb(63, 169, 63);
+        box-shadow: 0px 0px 20px rgb(91, 221, 91);
+}
+
+#boton_no{
+    background-color: rgb(232, 29, 29);
+    box-shadow: 0px 0px 20px rgb(197, 40, 40);
+}
+
+
+.heart {
+    position: fixed;
+    font-size: 20px;
+    color: red;
+    animation: fall linear infinite;
+    z-index: -1;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(-100vw) translateX(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) translateX(20px) rotate(360deg);
+    }
+  }
